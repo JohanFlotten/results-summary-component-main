@@ -1,0 +1,254 @@
+/* CSS RESET */
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    line-height: 1.5;
+}
+  
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: var(--font-family, 'Hanken Grotesk', sans-serif);
+    line-height: 1.5;
+}
+
+
+main {
+    min-height: 80vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+
+}
+
+.mainbox {
+    display: flex;
+    justify-content: space-around;
+    background-color:hsl(0, 0%, 100%);
+    margin-top: 25vh;
+    margin-left: 35vw;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 10px 15px 15px 5px rgba(189, 192, 215, 0.374);
+}
+
+.resultside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 280px;
+    height: 380px;
+    border-radius: 30px;
+    color:white;
+    background: linear-gradient(to bottom, hsla(252, 100%, 67%, 0.668) 0%, hsl(241, 81%, 54%) 100%);
+}
+
+.result {
+    color: hsl(0, 0%, 100%);
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    background: linear-gradient(to top, rgba(78, 33, 202, 0.508), hsla(241, 72%, 46%, 0));
+    margin-bottom:30px;
+    margin-top: 20px;
+}
+
+.of {
+    color: rgba(240, 248, 255, 0.518);
+}
+
+.number {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.great {
+    font-size: 1.4rem;
+}
+
+.scoretext {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+.summarybox {
+    background-color:hsl(0, 0%, 100%);
+    width: 280px;
+    height: 380px;
+    border-radius: 30px;
+}
+
+.summary {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 800;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoretitle {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* background-color: rgba(255, 255, 255, 0.305); */
+    /* background-color: rgb(235, 33, 33); */
+    height: 200px;
+    width: 200px;
+    justify-content: space-between
+}
+
+.scoretitle-row {
+    display: flex; /* Display score rows in a row */
+    align-items: center; /* Align items vertically */
+}
+
+.scoretitle-row p {
+    margin-right: 13px; /* Add space between elements */
+}
+
+.scoretitle p {
+    display: flex; /* Use flexbox for each paragraph */
+    align-items: center; /* Align items vertically */
+    font-weight: 700;
+}
+
+.scoretitle p img {
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+.titles {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.scores {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.continue {
+    margin-top: 35px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    width: 80%;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.p {
+    font-size: 18px;
+}
+
+.red {
+    color: hsl(0, 100%, 67%);
+}
+
+.yellow {
+    color: hsl(39, 100%, 56%);
+}
+
+.green {
+    color: hsl(166, 100%, 37%);
+}
+
+.darkblue {
+    color: hsl(234, 85%, 45%);
+}
+
+@media screen and (max-width: 880px) {
+    .mainbox {
+        flex-direction: column;
+        justify-content: space-around;
+        /* background-color:hsl(0, 81%, 56%); */
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100vw;
+        height: 100vh;
+        justify-content: start;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .resultside {
+        width: 100%;
+        height: 45vh;
+        border-radius: 0px 0px 30px 30px;
+        background: linear-gradient(to bottom, hsla(252, 100%, 67%, 0.668) 0%, hsl(241, 81%, 54%) 100%);
+    }
+
+    .summarybox {
+        width: 100vw;
+        height: 100vh;
+        /* background-color: red; */
+        border-radius: 0px 0px 0px 0px;
+        
+    }
+
+    .summary {
+        margin-left:30px;
+    }
+
+    .flex {
+        height: 440px;
+
+    }
+
+    .scoretitle {
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 40vh;
+        width: 73vw;
+        font-size: 1.1rem;
+
+    }
+
+    .scoretext {
+        width: 210px;
+    }
+
+    .continue {
+        width: 85%;
+        padding: 20px;
+        font-size: 1.5rem;
+        border-radius: 45px;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
